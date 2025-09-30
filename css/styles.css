@@ -1,0 +1,658 @@
+.hero {
+    background-image: url("/img/imagen14.jpg");
+    /* Ajusta la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 70vh;
+    /* altura que no abruma */
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+/* Oscurecer un poco la imagen para resaltar el texto */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+/* Contenedor encima del overlay */
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Animación de botones */
+.animate-btn {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.animate-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+body {
+    padding-top: 70px;
+    /* Ajusta según altura de tu navbar */
+}
+
+
+
+
+.section-cards {
+    background: #fff;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.section-description {
+    font-size: 1.1rem;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Tarjetas */
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    /* Eleva la tarjeta */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen fija recortada */
+.card-img-wrapper {
+    width: 100%;
+    height: 200px;
+    /* Tamaño fijo */
+    overflow: hidden;
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Recorta la imagen */
+    object-position: center;
+    transition: transform 0.5s ease;
+}
+
+.card-img-wrapper img:hover {
+    transform: scale(1.05);
+    /* Zoom suave */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+
+.section-cta {
+    background: #000;
+    /* Fondo negro */
+    color: white;
+}
+
+.cta-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.cta-subtitle {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+/* Botón animado igual al hero */
+.animate-btn {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.animate-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+
+
+/* Hero Menú */
+.hero-menu {
+    background-image: url("/img/imagen20.jpg");
+    /* Pon aquí tu imagen */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 40vh;
+    /* Altura menor que el hero del inicio */
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+/* Overlay para oscurecer la imagen */
+.hero-menu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+/* Contenido encima del overlay */
+.hero-menu .container {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Sección Menú */
+.section-menu {
+    background: #fff;
+}
+
+.menu-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+
+.menu-divider {
+    width: calc(100% - 60px);
+    /* ancho casi completo */
+    height: 3px;
+    background: #FF8C00;
+    /* Naranja oscuro */
+    margin: 0 auto 40px auto;
+    border: none;
+}
+
+.menu-card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-card:hover {
+    transform: scale(1.03);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.card-description {
+    font-size: 1rem;
+    text-align: left;
+    color: #555;
+}
+
+/* Precios centrados y color naranja */
+.menu-prices {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.menu-prices h6 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #FF8C00;
+    /* Naranja */
+    margin: 0;
+}
+
+.menu-prices p {
+    margin: 0;
+    color: #FF8C00;
+    /* Naranja */
+}
+
+/* Botón menú */
+.btn-menu {
+    background: #FF8C00;
+    /* Naranja oscuro */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1.1rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.3s ease;
+    margin-top: 20px;
+    /* Espacio extra entre precios y botón */
+}
+
+.btn-menu:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+    background: #e07b00;
+    /* Un naranja más brillante */
+}
+
+
+.menu-card-alt {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-card-alt:hover {
+    transform: scale(1.03);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.menu-card-alt .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.menu-card-alt .product-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FF8C00;
+}
+
+.menu-card-alt .card-description {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+    text-align: left;
+}
+
+
+
+
+/* Hero Nosotros */
+.hero-nosotros {
+    background-image: url("/img/imagen21.jpg");
+    /* Pon aquí tu imagen */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 40vh;
+    /* Altura menor que el hero del inicio */
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+/* Overlay para oscurecer la imagen */
+.hero-nosotros::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+/* Contenido encima del overlay */
+.hero-nosotros .container {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+
+.section-sobre-nosotros {
+    background: #fff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.section-sobre-nosotros h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-align: left;
+    /* ahora pegado a la izquierda */
+    color: #000;
+    margin-bottom: 5px !important;
+    /* espacio más pequeño entre título y párrafo */
+}
+
+.sobre-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #444;
+    text-align: left;
+    margin-top: 0;
+}
+
+.imagen-cuadro {
+    width: 100%;
+    max-width: 650px;
+    /* límite del ancho */
+    height: 450px;
+    /* altura fija rectangular */
+    margin: 0 auto;
+    overflow: hidden;
+    /* recorta lo que sobresalga */
+    border-radius: 15px;
+    /* bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* sombra elegante */
+}
+
+.imagen-cuadro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* hace que la imagen llene el cuadro sin deformarse */
+    border-radius: 15px;
+}
+
+.section-sobre-nosotros p {
+    margin-top: 0 !important;
+    /* quitamos margen superior del párrafo */
+}
+
+.valores-section {
+    background: #f5f5f5;
+    /* gris claro */
+}
+
+.valores-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.valores-subtext {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.valor-card {
+    background: #ffffff;
+    /* blanco limpio que combina con gris */
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.valor-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.valor-icon i {
+    font-size: 2.5rem;
+    color: #ff8c00;
+    /* naranja oscuro */
+}
+
+.valor-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.valor-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+/* Hero Galeria */
+.hero-galeria {
+    background-image: url("/img/imagen22.jpg");
+    /* Pon aquí tu imagen */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 40vh;
+    /* Altura menor que el hero del inicio */
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+
+.galeria-card {
+    position: relative;
+    height: 250px;
+    /* tamaño fijo */
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.galeria-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.galeria-card:hover img {
+    transform: scale(1.1);
+    /* zoom suave */
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    color: white;
+    text-align: left;
+}
+
+.overlay h5 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.overlay p {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+
+
+/* ==== SECCIÓN CTA ==== */
+.cta-section {
+    background: #000;
+    color: white;
+    padding: 60px 0;
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.cta-section p {
+    font-size: 1.1rem;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+/* ==== BOTONES ==== */
+.btn-orange {
+    background-color: #ff6600;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-orange:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(255, 102, 0, 0.6);
+    color: white;
+}
+
+.btn-outline-orange {
+    background: transparent;
+    border: 2px solid #ff6600;
+    color: #ff6600;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-outline-orange:hover {
+    transform: scale(1.05);
+    background: #ff6600;
+    color: white;
+    box-shadow: 0 6px 18px rgba(255, 102, 0, 0.6);
+}
+
+
+
+
+/* Hero contacto */
+.hero-contacto {
+    background-image: url("/img/imagen23.jpg");
+    /* Pon aquí tu imagen */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 40vh;
+    /* Altura menor que el hero del inicio */
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+/* Contacto */
+#contacto h2 {
+    font-weight: bold;
+    color: #333;
+}
+
+#contacto .form-control {
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#contacto .form-control:focus {
+    border-color: #ff6600;
+    box-shadow: 0 0 8px rgba(255, 102, 0, 0.4);
+}
+
+#contacto .btn-primary {
+    background-color: #ff6600;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+#contacto .btn-primary:hover {
+    background-color: #e55b00;
+    transform: scale(1.05);
+}
+
+/* Tarjetas */
+#contacto .card {
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+#contacto .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Horarios */
+#horarios h2 {
+    font-weight: bold;
+    color: #333;
+}
+
+#horarios ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+#horarios ul li i {
+    color: #ff6600;
+    margin-right: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .redes-footer a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+footer .redes-footer a:hover {
+    color: #ff6600;
+    transform: scale(1.2);
+}
