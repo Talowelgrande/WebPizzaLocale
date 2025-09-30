@@ -308,7 +308,7 @@ body {
 
 /* Hero Nosotros */
 .hero-nosotros {
-    background-image: url("../img/imagen21.jpg");
+    background-image: url("../img/imagen14.jpg");
     /* Pon aquí tu imagen */
     background-size: cover;
     background-position: center;
@@ -447,7 +447,7 @@ body {
 
 /* Hero Galeria */
 .hero-galeria {
-    background-image: url("../img/imagen22.jpg");
+    background-image: url("../img/imagen20.jpg");
     /* Pon aquí tu imagen */
     background-size: cover;
     background-position: center;
@@ -566,7 +566,7 @@ body {
 
 /* Hero contacto */
 .hero-contacto {
-    background-image: url("../img/imagen23.jpg");
+    background-image: url("../img/imagen14.jpg");
     /* Pon aquí tu imagen */
     background-size: cover;
     background-position: center;
@@ -657,5 +657,6 @@ footer .redes-footer a:hover {
     transform: scale(1.2);
 
 }
+
 
 
