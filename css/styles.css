@@ -151,7 +151,7 @@ body {
 
 /* Hero Menú */
 .hero-menu {
-    background-image: url("../img/imagen20.jpg");
+    background-image: url("../img/imagen23.jpg");
     /* Pon aquí tu imagen */
     background-size: cover;
     background-position: center;
@@ -308,7 +308,7 @@ body {
 
 /* Hero Nosotros */
 .hero-nosotros {
-    background-image: url("../img/imagen14.jpg");
+    background-image: url("../img/imagen20.jpg");
     /* Pon aquí tu imagen */
     background-size: cover;
     background-position: center;
@@ -447,7 +447,7 @@ body {
 
 /* Hero Galeria */
 .hero-galeria {
-    background-image: url("../img/imagen20.jpg");
+    background-image: url("../img/imagen21.jpg");
     /* Pon aquí tu imagen */
     background-size: cover;
     background-position: center;
@@ -460,6 +460,18 @@ body {
     text-align: center;
     color: white;
 }
+
+/* Oscurecer un poco la imagen para resaltar el texto */
+.hero-galeria::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+}
+
 
 
 .galeria-card {
@@ -566,7 +578,7 @@ body {
 
 /* Hero contacto */
 .hero-contacto {
-    background-image: url("../img/imagen14.jpg");
+    background-image: url("../img/imagen22.jpg");
     /* Pon aquí tu imagen */
     background-size: cover;
     background-position: center;
@@ -579,6 +591,18 @@ body {
     text-align: center;
     color: white;
 }
+
+/* Oscurecer un poco la imagen para resaltar el texto */
+.hero-contacto::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+}
+
 /* Contacto */
 #contacto h2 {
     font-weight: bold;
@@ -657,6 +681,7 @@ footer .redes-footer a:hover {
     transform: scale(1.2);
 
 }
+
 
 
 
