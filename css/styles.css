@@ -1,5 +1,5 @@
 .hero {
-    background-image: url("img/imagen14.jpg");
+    background-image: url("../img/imagen14.jpg");
     /* Ajusta la ruta de tu imagen */
     background-size: cover;
     background-position: center;
@@ -151,7 +151,7 @@ body {
 
 /* Hero Menú */
 .hero-menu {
-    background-image: url("img/imagen20.jpg");
+    background-image: url("../img/imagen20.jpg");
     /* Pon aquí tu imagen */
     background-size: cover;
     background-position: center;
@@ -447,7 +447,7 @@ body {
 
 /* Hero Galeria */
 .hero-galeria {
-    background-image: url("img/imagen22.jpg");
+    background-image: url("../img/imagen22.jpg");
     /* Pon aquí tu imagen */
     background-size: cover;
     background-position: center;
@@ -566,7 +566,7 @@ body {
 
 /* Hero contacto */
 .hero-contacto {
-    background-image: url("img/imagen23.jpg");
+    background-image: url("../img/imagen23.jpg");
     /* Pon aquí tu imagen */
     background-size: cover;
     background-position: center;
@@ -657,3 +657,4 @@ footer .redes-footer a:hover {
     transform: scale(1.2);
 
 }
+
